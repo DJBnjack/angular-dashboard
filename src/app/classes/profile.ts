@@ -16,7 +16,7 @@ export class Profile {
     };
 
     public static fromJson(jsonObj: any): Profile {
-        console.log(jsonObj);
+        // console.log(jsonObj);
         const firstPersona = jsonObj.results[0];
         const newProfile = new Profile();
         newProfile.name = firstPersona.name.first[0].toUpperCase() + firstPersona.name.first.slice(1) + ' ' +
