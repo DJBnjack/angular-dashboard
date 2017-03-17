@@ -7,8 +7,11 @@ main {
  * Typography
  */
 
-h1 {
-  margin-bottom: 20px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid #eee;
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('/assets/img/examples/shiba1.jpg');
+  background-size: cover;
 }
