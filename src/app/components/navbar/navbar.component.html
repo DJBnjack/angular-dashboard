@@ -30,9 +30,10 @@
       </li>
     </ul>
 
-    <span class="navbar-text">
-      Navbar text with an inline element
-    </span>
+    <div *ngIf="profile.picture !== undefined" class="navbar-item">
+      <span class="navbar-text">Welcome back, {{profile.name}}&nbsp;</span>
+      <img class="profile" src="{{profile.picture.thumbnail}}">
+    </div>
   </div>
 </nav>
 
