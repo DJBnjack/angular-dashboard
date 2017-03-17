@@ -1,0 +1,11 @@
+.example-card {
+  width: 400px;
+}
+
+.example-header-image {
+  background-image: url('/assets/images/dogs/shiba1.jpg');
+  background-size: cover;
+  width: 35px;
+  height: 40px;
+  border-radius: 15px;
+}

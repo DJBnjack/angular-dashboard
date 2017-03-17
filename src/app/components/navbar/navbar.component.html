@@ -4,25 +4,40 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Angular-Dashboard</a>
+
+  <span class="navbar-text  hidden-md-down"><md-slide-toggle class="m-0" [labelPosition]="'before'" [checked]="true">Show Sidebar?</md-slide-toggle></span>
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="generalMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          General
+        </a>
+        <div class="dropdown-menu" aria-labelledby="generalMenuLink">
+          <a class="dropdown-item" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="materialMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
-          Dropdown link
+          Material Design
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu" aria-labelledby="materialMenuLink">
+          <a class="dropdown-item" routerLink="/mat-cards" routerLinkActive="active">Cards</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="b4MenuLink" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Bootstrap 4
+        </a>
+        <div class="dropdown-menu" aria-labelledby="b4MenuLink">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -31,7 +46,7 @@
     </ul>
 
     <div *ngIf="profile.picture !== undefined" class="navbar-item">
-      <span class="navbar-text">Welcome back, {{profile.name}}&nbsp;</span>
+      <span class="navbar-text hidden-xs-down">Welcome back, {{profile.name}}&nbsp;</span>
       <img class="profile" src="{{profile.picture.thumbnail}}">
     </div>
   </div>
