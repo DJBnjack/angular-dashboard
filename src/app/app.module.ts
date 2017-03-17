@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
@@ -16,9 +15,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ProfileService } from './services/profile.service';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MaterialCardsComponent } from './pages/material-cards/material-cards.component';
+import { ChartsComponent } from './pages/charts/charts.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'charts', component: ChartsComponent },
   { path: 'mat-cards', component: MaterialCardsComponent},
   { path: '',
     redirectTo: '/dashboard',
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     NavbarComponent,
     SidebarComponent,
     DashboardComponent,
-    MaterialCardsComponent
+    MaterialCardsComponent,
+    ChartsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    MaterialModule
+    MaterialModule,
+    NgxChartsModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
