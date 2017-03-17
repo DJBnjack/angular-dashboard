@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './main/app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -20,7 +21,8 @@ import { ProfileService } from './services/profile.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    MaterialModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
