@@ -16,11 +16,7 @@ export const ProfileMockData: Profile[] = [
         },
         "dob": "1981-06-20 00:28:43",
         "phone": "06-17871651",
-        "picture": {
-            "large": "https://randomuser.me/api/portraits/men/49.jpg",
-            "medium": "https://randomuser.me/api/portraits/med/men/49.jpg",
-            "thumbnail": "https://randomuser.me/api/portraits/thumb/men/49.jpg"
-        }
+        "picture": "/assets/images/profile/profile1.jpg"
     },
     {
         "gender": "female",
@@ -38,11 +34,7 @@ export const ProfileMockData: Profile[] = [
         },
         "dob": "1981-08-11 00:26:42",
         "phone": "06-01965711",
-        "picture": {
-            "large": "https://randomuser.me/api/portraits/women/65.jpg",
-            "medium": "https://randomuser.me/api/portraits/med/women/65.jpg",
-            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/65.jpg"
-        }
+        "picture": "/assets/images/profile/profile2.jpg"
     },
     {
         "gender": "female",
@@ -60,11 +52,7 @@ export const ProfileMockData: Profile[] = [
         },
         "dob": "1987-04-24 12:02:26",
         "phone": "06-27891471",
-        "picture": {
-            "large": "https://randomuser.me/api/portraits/women/51.jpg",
-            "medium": "https://randomuser.me/api/portraits/med/women/51.jpg",
-            "thumbnail": "https://randomuser.me/api/portraits/thumb/women/51.jpg"
-        },
+        "picture": "/assets/images/profile/profile3.jpg"
     }
 ];
 

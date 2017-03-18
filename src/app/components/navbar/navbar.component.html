@@ -36,9 +36,9 @@
           Bootstrap 4
         </a>
         <div class="dropdown-menu" aria-labelledby="b4MenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" routerLink="/bs-grids" routerLinkActive="active">Grids</a>
+          <a class="dropdown-item" routerLink="/bs-navbars" routerLinkActive="active">Navbars</a>
+          <a class="dropdown-item" routerLink="/bs-carousel" routerLinkActive="active">Carousel</a>
         </div>
       </li>
     </ul>
@@ -47,7 +47,7 @@
       <a class="nav-link dropdown-toggle" href="http://example.com" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         <span class="navbar-text hidden-xs-down">{{profile.name}}</span>
-        <img class="profile navbar-item" src="{{profile.picture.thumbnail}}">
+        <img class="profile navbar-item" src="{{profile.picture}}">
       </a>
       <div class="dropdown-menu" aria-labelledby="profileDropdown">
         <a class="dropdown-item" href="#">Action</a>

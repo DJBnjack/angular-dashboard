@@ -17,12 +17,18 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MaterialCardsComponent } from './pages/material-cards/material-cards.component';
 import { ChartsComponent } from './pages/charts/charts.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { BsGridsComponent } from './pages/bootstrap/bs-grids/bs-grids.component';
+import { BsNavbarsComponent } from './pages/bootstrap/bs-navbars/bs-navbars.component';
+import { BsCarouselComponent } from './pages/bootstrap/bs-carousel/bs-carousel.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'charts', component: ChartsComponent },
-  { path: 'mat-cards', component: MaterialCardsComponent},
+  { path: 'mat-cards', component: MaterialCardsComponent },
+  { path: 'bs-grids', component: BsGridsComponent },
+  { path: 'bs-navbars', component: BsNavbarsComponent },
+  { path: 'bs-carousel', component: BsCarouselComponent },
   { path: '',
     redirectTo: '/welcome',
     pathMatch: 'full'
@@ -37,7 +43,10 @@ const appRoutes: Routes = [
     DashboardComponent,
     MaterialCardsComponent,
     ChartsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    BsGridsComponent,
+    BsNavbarsComponent,
+    BsCarouselComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
