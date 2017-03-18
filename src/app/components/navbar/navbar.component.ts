@@ -11,10 +11,12 @@ import { Profile } from '../../classes/profile';
 export class NavbarComponent implements OnInit {
   profile: Profile;
 
-  constructor(private profileService: ProfileService) { }
+  constructor(private profileService: ProfileService) {
+    this.profile = this.profileService.profiles[0];
+  }
 
   ngOnInit() {
-    this.profileService.profile.subscribe(profile => this.profile = profile);
+
   }
 
 }

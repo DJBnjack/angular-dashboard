@@ -6,8 +6,6 @@
 
   <a class="navbar-brand" routerLink="/welcome">Angular-Dashboard</a>
 
-  <span class="navbar-text  hidden-md-down"><md-slide-toggle class="m-0" [labelPosition]="'before'" [checked]="true">Show Sidebar?</md-slide-toggle></span>
-
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
@@ -45,10 +43,17 @@
       </li>
     </ul>
 
-    <div *ngIf="profile.picture !== undefined" class="navbar-item">
-      <span class="navbar-text hidden-xs-down">Welcome back, {{profile.name}}&nbsp;</span>
-      <img class="profile" src="{{profile.picture.thumbnail}}">
+    <div *ngIf="profile.picture !== undefined" class="navbar-item dropdown">
+      <a class="nav-link dropdown-toggle" href="http://example.com" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        <span class="navbar-text hidden-xs-down">{{profile.name}}</span>
+        <img class="profile navbar-item" src="{{profile.picture.thumbnail}}">
+      </a>
+      <div class="dropdown-menu" aria-labelledby="profileDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
     </div>
   </div>
 </nav>
-
