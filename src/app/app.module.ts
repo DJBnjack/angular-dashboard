@@ -16,13 +16,15 @@ import { ProfileService } from './services/profile.service';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MaterialCardsComponent } from './pages/material-cards/material-cards.component';
 import { ChartsComponent } from './pages/charts/charts.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const appRoutes: Routes = [
+  { path: 'welcome', component: WelcomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'mat-cards', component: MaterialCardsComponent},
   { path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/welcome',
     pathMatch: 'full'
   },
 ];
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     SidebarComponent,
     DashboardComponent,
     MaterialCardsComponent,
-    ChartsComponent
+    ChartsComponent,
+    WelcomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
