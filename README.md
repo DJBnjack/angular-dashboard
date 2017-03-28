@@ -8,19 +8,18 @@ Repository for Angular (2+) and Bootstrap (4+) Dashboards, using Angular-CLI
  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
 /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
                |___/
-
-
-@angular/cli: 1.0.0-rc.2
+@angular/cli: 1.0.0
 node: 7.7.3
 os: win32 x64
-@angular/common: 2.4.9
-@angular/compiler: 2.4.9
-@angular/core: 2.4.9
-@angular/forms: 2.4.9
-@angular/http: 2.4.9
-@angular/platform-browser: 2.4.9
-@angular/platform-browser-dynamic: 2.4.9
-@angular/router: 3.4.9
-@angular/cli: 1.0.0-rc.2
-@angular/compiler-cli: 2.4.9
+@angular/common: 4.0.0
+@angular/compiler: 4.0.0
+@angular/core: 4.0.0
+@angular/forms: 4.0.0
+@angular/http: 4.0.0
+@angular/platform-browser: 4.0.0
+@angular/platform-browser-dynamic: 4.0.0
+@angular/router: 4.0.0
+@angular/cli: 1.0.0
+@angular/compiler-cli: 4.0.0
+
 ```
